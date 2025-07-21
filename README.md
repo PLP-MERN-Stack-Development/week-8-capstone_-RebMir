@@ -34,19 +34,44 @@ Get personalized crop planting advice using real-time data about:
 
 ---
 
-## 💻 Tech Stack
+## 🧑‍💻 Tech Stack
 
-| Layer      | Technology                    |
-|------------|-------------------------------|
-| Frontend   | React.js, TailwindCSS, Vite   |
-| Backend    | Express.js, Node.js           |
-| Database   | MongoDB Atlas                 |
-| Auth       | JWT + bcrypt                  |
-| AI         | OpenAI (GPT API)              |
+| Layer         | Tech                             |
+|---------------|----------------------------------|
+| Frontend      | React + TypeScript, TailwindCSS  |
+| Backend       | Node.js + Express + TypeScript   |
+| Database      | MongoDB Atlas                    |
+| AI Assistant  | OpenAI API / Rule-based logic    |
+| Weather API   | OpenWeatherMap API (or similar)  |
+| Deployment    | Vercel (Frontend), Render (Backend) |
 
 ---
 
-## 🚀 Getting Started
+## 📁 Folder Structure
+
+AgriLink/
+├── backend/ # Express API with TypeScript
+│ ├── controllers/
+│ ├── routes/
+│ ├── models/
+│ ├── middlewares/
+│ ├── config/
+│ ├── utils/
+│ └── server.ts
+├── frontend/ # React + TS + TailwindCSS (Vite)
+│ ├── src/
+│ │ ├── components/
+│ │ ├── pages/
+│ │ ├── hooks/
+│ │ ├── services/
+│ │ ├── store/
+│ │ ├── App.tsx
+│ │ └── main.tsx
+│ └── tailwind.config.js
+├── .env
+├── package.json
+└── README.md
+
 
 ### ✅ Prerequisites
 
@@ -63,26 +88,55 @@ Get personalized crop planting advice using real-time data about:
 
 ```bash
 git clone https://github.com/PLP-MERN-Stack-Development/week-8-capstone_-RebMir.git
-cd agrilink-smart-agriculture
+cd field-wise-aid
 
 
-## Project Ideas
+2️⃣ Setup Backend
 
-The `Week8-Assignment.md` file includes several project ideas, but you're encouraged to develop your own idea that demonstrates your skills and interests.
+cd backend
+pnpm install
 
-## Submission
+Create a .env file and add:
+PORT=5000
+MONGO_URI=your_mongodb_atlas_uri
+JWT_SECRET=your_jwt_secret
+OPENAI_API_KEY=your_openai_api_key
 
-Your project will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+Run development server:
+pnpm run dev
 
-1. Commit and push your code regularly
-2. Include comprehensive documentation
-3. Deploy your application and add the live URL to your README.md
-4. Create a video demonstration and include the link in your README.md
+3️⃣ Setup Frontend
+cd ../frontend
+pnpm install
 
-## Resources
+Start the Vite dev server:
+pnpm run dev
 
-- [MongoDB Documentation](https://docs.mongodb.com/)
-- [Express.js Documentation](https://expressjs.com/)
-- [React Documentation](https://react.dev/)
-- [Node.js Documentation](https://nodejs.org/en/docs/)
-- [GitHub Classroom Guide](https://docs.github.com/en/education/manage-coursework-with-github-classroom) 
+✅ Environment Variables
+Create a .env file in the backend directory:
+PORT=5000
+MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/agrilink
+JWT_SECRET=your_jwt_secret
+OPENAI_API_KEY=your_api_key
+WEATHER_API_KEY=your_weather_api_key
+
+
+🧪 Testing
+
+Frontend: React Testing Library, Vitest
+
+Backend: Jest, Supertest
+
+E2E: Cypress
+
+🧑‍🎓 Contributing
+Fork the repo
+
+Create your feature branch (git checkout -b feature-name)
+
+Commit your changes (git commit -m 'Add new feature')
+
+Push to the branch (git push origin feature-name)
+
+Create a Pull Request
+

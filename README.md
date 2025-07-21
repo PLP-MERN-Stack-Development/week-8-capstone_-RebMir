@@ -5,8 +5,9 @@ AgriLink is a smart agriculture web application designed to revolutionize how fa
 
 ## 🌐 Live Demo
 
-Check out the live version of AgriLink here:  
+- UCheck out the live version of AgriLink here:  
 👉 [https://preview--field-wise-aid.lovable.app/](https://preview--field-wise-aid.lovable.app/)
+
 
 ## 🌟 Features
 

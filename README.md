@@ -47,7 +47,7 @@ Get personalized crop planting advice using real-time data about:
 ---
 
 ## 📁 Folder Structure
-
+```
 AgriLink/
 ├── backend/ # Express API with TypeScript
 │ ├── controllers/
@@ -70,7 +70,7 @@ AgriLink/
 ├── .env
 ├── package.json
 └── README.md
-
+```
 ## 🚀 Getting Started
 ```
 ### ✅ Prerequisites
